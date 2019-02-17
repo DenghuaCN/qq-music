@@ -13,11 +13,16 @@
   "keywords": [],
   "author": {
     "name": "DengHua",
-    "email": "denghua.fm@foxmail.com"  
+    "email": "denghua.fm@foxmail.com"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DenghuaCN/qq-music/issues"
   },
-  "homepage": "https://github.com/DenghuaCN/qq-music#readme"
+  "homepage": "https://github.com/DenghuaCN/qq-music#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1"
+  }
 }
