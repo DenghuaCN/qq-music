@@ -1,0 +1,57 @@
+#rank-view {
+    margin: 10px;
+}
+.toplist {
+    .top-item {
+        height: 100px;
+        background: #fff;
+        margin-bottom: 10px;
+    }
+    .top-item-media {
+        float: left;
+        img {
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+    }
+    .top-item-info {
+        position: relative;
+        padding: 7px 10px 6px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -4px;
+            width: 6px;
+            height: 6px;
+            transform: rotate(315deg);
+            border-right: 1px solid #b2b2b2;
+            border-bottom: 1px solid #b2b2b2;
+        }
+        .top-item-title {
+            margin: 0;
+            font-family: "hiragino sans gb", arial;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 5px;
+        }
+        .top-item-list {
+            font-size: 14px;
+            color: rgba(0,0,0,.5);
+            font-weight: 400;
+            line-height: 21px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            .song-name {
+                color: black;
+            }
+        }
+    }
+}

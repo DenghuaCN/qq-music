@@ -11,22 +11,30 @@ gulp.task("less",function() {
                     stream: true
                 }))
 })
-
-gulp.task("watch", ["browserSync", "less"], function () {
-    gulp.watch("less/*.less",["less"])
+gulp.task("html",function() {
+    return gulp.src("./index.html")
+                .pipe(browserSync.reload({
+                    stream: true
+                }))
+})
+gulp.task("js-watch",function() {
+    return gulp.src("./scripts/*.js")
+                .pipe(browserSync.reload({
+                    stream: true
+                }))
 })
 
+gulp.task("watch", ["browserSync", "less","html"], function() {
+
+    gulp.watch("./less/*.less",["less"]);
+    gulp.watch("./index.html",["html"]);
+    gulp.watch("./scripts/*.js",["js-watch"]);
+
+})
 gulp.task("browserSync",function () {
     browserSync({
         server: {
             baseDir: "../qq-music",
-            index: "index.html"
         }
     })
-    // browserSync({
-    //     server: {
-    //         baseDir: ""
-    //     }
-    // })
 })
-
