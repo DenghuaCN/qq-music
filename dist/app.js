@@ -106,7 +106,7 @@ function albumCoverUrl(id) {
     return 'https://y.gtimg.cn/music/photo_new/T002R300x300M000' + id + '.jpg?max_age=2592000';
 }
 function songUrl2(mid) {
-    return 'http://dl.stream.qqmusic.qq.com/C400' + mid + '.m4a?guid=4861199277&vkey=6852F88C4A479AF91A5793A8955326696E87C84DE8D240267AD37739F69FEB5CFB05C9466EAC25FF06D2471738F8565C32A2B3FAFDA2819B';
+    return 'http://dl.stream.qqmusic.qq.com/C400' + mid + '.m4a?guid=8030773828&vkey=AF5DCE8C4E39CAC0860D17D9E811A01B44EF4D37ABD55AE3AAB44554F760911E619044FAF1ED65152ACACD9B11B6FAC285EFE3D85FA2B229';
 }
 
 function searchUrl(keyword) {
