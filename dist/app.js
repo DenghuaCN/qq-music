@@ -405,6 +405,7 @@ var TopList = exports.TopList = function () {
             fetch(_constants.TOPLIST_URL).then(function (res) {
                 return res.json();
             }).then(function (json) {
+                console.log(json);
                 return _this.render(json.data.topList);
             });
             return this;
